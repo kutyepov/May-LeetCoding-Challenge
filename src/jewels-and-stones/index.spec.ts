@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import numJewelsInStones from './index';
 
-describe('firstBadVersion', () => {
+describe('numJewelsInStones', () => {
   it('should find three jewels', () => {
     expect(numJewelsInStones('aA', 'aAAbbbb')).to.be.equal(3);
   });
