@@ -1,10 +1,16 @@
 export default function findComplement(num: number): number {
-  const binary: string = num.toString(2);
-  let resultStr: string = '';
+  if (num === 0) {
+    return 1;
+  }
+  let numberOfSignificantBits: number = 0;
+  let n: number = num;
 
-  for (let n of binary) {
-    resultStr += Number(!Number(n)).toString();
+  while (n !== 0) {
+    n = n >> 1;
+    numberOfSignificantBits = numberOfSignificantBits + 1;
   }
 
-  return parseInt(resultStr, 2);
+  let mask = (2 ** 32 - 1) >>> (32 - numberOfSignificantBits);
+
+  return num ^ mask;
 }
