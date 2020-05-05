@@ -9,3 +9,5 @@ My solutions to [May LeetCoding Challenge](https://leetcode.com/explore/featured
 [Day 3 - Ransom Note](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/ransom-note/README.md)
 
 [Day 4 - Complement Number](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/number-complement/README.md)
+
+[Day 5 - First Unique Character in a String](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/first-unique-character-in-a-string/README.md)
