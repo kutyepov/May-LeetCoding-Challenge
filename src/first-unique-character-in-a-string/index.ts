@@ -1,40 +1,46 @@
 export default function firstUniqChar(str: string): number {
   /*
-    Build a map, where character is a `key` 
-    and value is its position in a string.
-    If value is `null`, then character was
-    encountered more than once.
+    Since the problem states:
+      > Note: You may assume the string contain only lowercase letters.
+    An array with 26 elements will suffice to track
+    how many different letters are used in the string. 
   */
-  const map: Map<string, number> = new Map();
+  const charactersFreq = new Array(26).fill(0);
+  /*
+    ASCII codes for:
 
-  for (let i: number = 0; i < str.length; i++) {
-    const character = str[i];
-    if (map.has(character)) {
-      // Found a duplicate character in a string
-      map.set(character, null);
-    } else {
-      // Presumably unique character.
-      // Saving its position in string
-      map.set(character, i);
-    }
-  }
+    'a' is 97
+    'b' is 98
+    ...
+    'z' is 122
 
-  let pos: number = null;
+    Since, indexes of charactersFreq go from 0 to 25,
+    an offset is needed to prevent out of boundary errors.
+  */
+  const offset = 'a'.charCodeAt(0);
 
   /*
-    Iterate over all values in map and find
-    an element with lowest index
-   */
-
-  for (let [_, index] of map) {
-    if (pos === null && index !== null) {
-      pos = index;
-    }
-
-    if (pos !== null && index !== null) {
-      pos = Math.min(index, pos);
-    }
+    A loop to build a frequency table.
+    For example, for string = "test", the table will look like:
+    [0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0]
+             e                           s t
+    which means that 'e' and 's' are used once,
+    and 't' is twice.
+  */
+  for (let ch of str) {
+    charactersFreq[ch.charCodeAt(0) - offset]++;
   }
 
-  return pos === null ? -1 : pos;
+  /*
+    Iterate over the string again and check whether
+    any given character is present in frequency table
+    and is used once. Once such character is found,
+    return its index.
+  */
+  for (let i = 0; i < str.length; i++) {
+    if (charactersFreq[str.charCodeAt(i) - offset] === 1) {
+      return i;
+    }
+  }
+  return -1;
 }
