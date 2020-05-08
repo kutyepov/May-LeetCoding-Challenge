@@ -13,3 +13,5 @@ My solutions to [May LeetCoding Challenge](https://leetcode.com/explore/featured
 [Day 5 - First Unique Character in a String](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/first-unique-character-in-a-string/README.md)
 
 [Day 6 - Majority Element](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/majority-element/README.md)
+
+[Day 8 - Check If It Is a Straight Line](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/check-if-it-is-a-straight-line/README.md)
