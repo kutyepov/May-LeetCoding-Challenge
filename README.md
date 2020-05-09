@@ -14,4 +14,6 @@ My solutions to [May LeetCoding Challenge](https://leetcode.com/explore/featured
 
 [Day 6 - Majority Element](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/majority-element/README.md)
 
+[Day 7 - MCousins in Binary Tree](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/cousins-in-binary-tree/README.md)
+
 [Day 8 - Check If It Is a Straight Line](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/check-if-it-is-a-straight-line/README.md)
