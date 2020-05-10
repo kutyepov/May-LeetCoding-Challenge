@@ -19,3 +19,5 @@ My solutions to [May LeetCoding Challenge](https://leetcode.com/explore/featured
 [Day 8 - Check If It Is a Straight Line](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/check-if-it-is-a-straight-line/README.md)
 
 [Day 9 - Valid Perfect Square](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/valid-perfect-square/README.md)
+
+[Day 10 - Find the Town Judge](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/find-the-town-judge/README.md)
