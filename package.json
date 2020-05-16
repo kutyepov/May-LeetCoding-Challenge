@@ -19,7 +19,7 @@
     "typescript": "3.9.2"
   },
   "scripts": {
-    "test": "ts-mocha --path -p ./tsconfig.json src/**/*.spec.ts",
+    "test": "ts-mocha ./tsconfig.json 'src/**/*.spec.ts'",
     "coverage": "nyc npm run test"
   },
   "keywords": [],
