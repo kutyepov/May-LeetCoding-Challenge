@@ -6,27 +6,18 @@ export default function oddEvenList(head: ListNode) {
     return head;
   }
 
-  let odd = new ListNode(head.val);
-  let even = new ListNode(head.next.val);
+  let odd = head;
+  let even = head.next;
   let evenHead = even;
-  let oddHead = odd;
-  let i = 3;
 
-  let current = head.next.next;
-
-  while (current !== null) {
-    if (i % 2 === 0) {
-      //even
-      even.next = new ListNode(current.val);
-      even = even.next;
-    } else {
-      odd.next = new ListNode(current.val);
-      odd = odd.next;
-    }
-    i++;
-    current = current.next;
+  while (even !== null && even.next !== null) {
+    odd.next = even.next;
+    odd = odd.next;
+    even.next = odd.next;
+    even = even.next;
   }
 
   odd.next = evenHead;
-  return oddHead;
+
+  return head;
 }
