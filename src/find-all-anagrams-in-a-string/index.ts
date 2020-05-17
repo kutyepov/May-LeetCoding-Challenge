@@ -1,18 +1,32 @@
+function buildFrequencyMap(str: string): number[] {
+  const frequencyMap = new Array(26).fill(0);
+  const offset = 'a'.charCodeAt(0);
+
+  for (const ch of str) {
+    frequencyMap[ch.charCodeAt(0) - offset]++;
+  }
+
+  return frequencyMap;
+}
+
+function compareFrequencies(a: number[], b: number[]) {
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] !== b[i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
 export default function findAnagrams(s: string, p: string): number[] {
   const result: number[] = [];
 
-  let strings: string[] = [];
-  let n = p.length;
+  const pLen = p.length;
+  const pFreq = buildFrequencyMap(p);
 
-  for (let i = 0; i < s.length - (n - 1); i++) {
-    strings.push(s.substr(i, n));
-  }
-
-  p = p.split('').sort().join('');
-
-  for (let i = 0; i < strings.length; i++) {
-    let str = strings[i].split('').sort().join('');
-    if (str === p) {
+  for (let i = 0; i < s.length - (pLen - 1); i++) {
+    const sFreq = buildFrequencyMap(s.substr(i, pLen));
+    if (compareFrequencies(pFreq, sFreq)) {
       result.push(i);
     }
   }
