@@ -1,9 +1,10 @@
+const ASCII_OFFSET = 'a'.charCodeAt(0);
+
 function buildFrequencyMap(str: string): number[] {
   const frequencyMap = new Array(26).fill(0);
-  const offset = 'a'.charCodeAt(0);
 
   for (const ch of str) {
-    frequencyMap[ch.charCodeAt(0) - offset]++;
+    frequencyMap[ch.charCodeAt(0) - ASCII_OFFSET]++;
   }
 
   return frequencyMap;
@@ -22,12 +23,24 @@ export default function findAnagrams(s: string, p: string): number[] {
   const result: number[] = [];
 
   const pLen = p.length;
-  const pFreq = buildFrequencyMap(p);
+  const sLen = s.length;
 
-  for (let i = 0; i < s.length - (pLen - 1); i++) {
-    const sFreq = buildFrequencyMap(s.substr(i, pLen));
+  if (pLen > sLen) {
+    return [];
+  }
+
+  const pFreq = buildFrequencyMap(p);
+  const sFreq = buildFrequencyMap(s.substr(0, pLen));
+
+  if (compareFrequencies(sFreq, pFreq)) {
+    result.push(0);
+  }
+
+  for (let i = pLen; i < sLen; i++) {
+    sFreq[s.charCodeAt(i - pLen) - ASCII_OFFSET]--;
+    sFreq[s.charCodeAt(i) - ASCII_OFFSET]++;
     if (compareFrequencies(pFreq, sFreq)) {
-      result.push(i);
+      result.push(i - pLen + 1);
     }
   }
 
