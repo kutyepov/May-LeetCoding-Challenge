@@ -19,6 +19,11 @@ describe('findAnagrams', () => {
       result: [0],
     },
     {
+      s: 'zzzbadcredit',
+      p: 'debitcard',
+      result: [3],
+    },
+    {
       s: '',
       p: 'a',
       result: [],
