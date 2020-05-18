@@ -31,3 +31,5 @@ My solutions to [May LeetCoding Challenge](https://leetcode.com/explore/featured
 [Day 16 - Odd Even Linked List](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/odd-even-linked-list/README.md)
 
 [Day 17 - Find All Anagrams in a String](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/find-all-anagrams-in-a-string/README.md)
+
+[Day 18 - Permutation in String](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/permutation-in-string/README.md)
