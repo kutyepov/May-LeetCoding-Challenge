@@ -35,3 +35,5 @@ My solutions to [May LeetCoding Challenge](https://leetcode.com/explore/featured
 [Day 18 - Permutation in String](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/permutation-in-string/README.md)
 
 [Day 19 - Online Stock Span](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/online-stock-span/README.md)
+
+[Day 20 - Kth Smallest Element in a BST](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/kth-smallest-element-in-a-bst/README.md)
