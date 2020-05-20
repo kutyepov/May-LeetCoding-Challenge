@@ -1,18 +1,21 @@
 // eslint-disable-next-line no-unused-vars
 import TreeNode from '../_helpers/treenode';
 
-function traverse(node: TreeNode, memo: number[]): void {
-  if (node === null) {
-    return;
-  }
-
-  traverse(node.left, memo);
-  memo.push(node.val);
-  traverse(node.right, memo);
-}
-
 export default function kthSmallest(root: TreeNode, k: number): number {
-  const memo = [];
-  traverse(root, memo);
-  return memo[k - 1];
+  const stack: TreeNode[] = [];
+  let current = root;
+  while (stack.length > 0 || current !== null) {
+    while (current !== null) {
+      stack.push(current);
+      current = current.left;
+    }
+    current = stack.pop();
+
+    if (--k === 0) {
+      return current.val;
+    }
+
+    current = current.right;
+  }
+  return -1;
 }
