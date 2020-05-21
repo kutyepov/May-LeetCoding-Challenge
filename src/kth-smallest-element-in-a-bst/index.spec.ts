@@ -18,4 +18,8 @@ describe('kthSmallest', () => {
     expect(kthSmallest(root, 5)).to.be.equal(5);
     expect(kthSmallest(root, 6)).to.be.equal(6);
   });
+
+  it('should return -1 for empty tree', () => {
+    expect(kthSmallest(null, 0)).to.be.equal(-1);
+  });
 });
