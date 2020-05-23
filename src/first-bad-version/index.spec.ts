@@ -7,6 +7,7 @@ describe('firstBadVersion', () => {
       [5, 4],
       [5, 5],
       [100, 5],
+      [0, 0],
     ];
 
     inputs.forEach(([latestVersion, badVersion]) => {

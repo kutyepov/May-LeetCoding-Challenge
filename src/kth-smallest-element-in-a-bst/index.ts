@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import TreeNode from '../_helpers/treenode';
 
-export default function kthSmallest(root: TreeNode, k: number): number {
+export default function kthSmallest(root: TreeNode | null, k: number): number {
   const stack: TreeNode[] = [];
-  let current = root;
+  let current: TreeNode | null | undefined = root;
   while (stack.length > 0 || current !== null) {
     while (current !== null) {
       stack.push(current);
@@ -12,10 +12,10 @@ export default function kthSmallest(root: TreeNode, k: number): number {
     current = stack.pop();
 
     if (--k === 0) {
-      return current.val;
+      return current!.val;
     }
 
-    current = current.right;
+    current = current!.right;
   }
   return -1;
 }

@@ -10,7 +10,7 @@ class StockSpanner {
     const stack = this.stack;
 
     while (stack.length > 0 && stack[stack.length - 1][0] <= price) {
-      count += stack.pop()[1];
+      count += stack.pop()![1];
     }
 
     stack.push([price, count]);

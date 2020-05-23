@@ -4,7 +4,7 @@ export default function majorityElement(nums: Array<number>): number {
     key is an element in `nums` array and
     value - how many times an element appears in `nums`
   */
-  const frequencyMap = {};
+  const frequencyMap: { [key: string]: number } = {};
 
   // build frequency map
   for (let n of nums) {
@@ -21,4 +21,6 @@ export default function majorityElement(nums: Array<number>): number {
       return Number(key);
     }
   }
+
+  return 0;
 }

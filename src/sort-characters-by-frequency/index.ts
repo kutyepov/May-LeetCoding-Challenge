@@ -1,5 +1,5 @@
 export default function frequencySort(s: string) {
-  const frequencies = <{ string: number }>{};
+  const frequencies = <{ [key: string]: number }>{};
 
   for (const ch of s) {
     frequencies[ch] = ~~frequencies[ch] + 1;

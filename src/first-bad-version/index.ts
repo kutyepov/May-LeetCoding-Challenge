@@ -22,6 +22,7 @@ function firstBadVersion(
         }
       }
     }
+    return 0;
   };
 }
 

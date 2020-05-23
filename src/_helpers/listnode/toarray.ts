@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import ListNode from '.';
 
-export default function listNodeToArray(root: ListNode): number[] {
+export default function listNodeToArray(root: ListNode | null): number[] {
   const result = [];
 
-  let current = root;
+  let current: ListNode | null = root;
 
   while (current !== null) {
     result.push(current.val);

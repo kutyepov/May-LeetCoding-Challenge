@@ -14,4 +14,8 @@ describe('majorityElement', () => {
       expect(majorityElement(input)).to.be.equal(output);
     });
   });
+
+  it("should return '0' for empty array", () => {
+    expect(majorityElement([])).to.be.equal(0);
+  });
 });

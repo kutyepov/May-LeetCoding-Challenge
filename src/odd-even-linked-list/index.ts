@@ -1,13 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import ListNode from '../_helpers/listnode';
 
-export default function oddEvenList(head: ListNode) {
+export default function oddEvenList(head: ListNode | null) {
   if (head === null || head.next === null) {
     return head;
   }
 
   let odd = head;
-  let even = head.next;
+  let even: ListNode | null = head.next;
   let evenHead = even;
 
   while (even !== null && even.next !== null) {

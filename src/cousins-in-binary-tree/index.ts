@@ -2,7 +2,7 @@
 import TreeNode from '../_helpers/treenode';
 
 export default function areCousins(
-  root: TreeNode,
+  root: TreeNode | null | undefined,
   x: number,
   y: number
 ): boolean {
@@ -26,12 +26,12 @@ export default function areCousins(
     currentLevel++;
     while (width > 0) {
       const node = q.pop();
-      if (node.left?.val === x || node.right?.val === x) {
+      if (node!.left?.val === x || node!.right?.val === x) {
         xParent = node;
         xLevel = currentLevel;
         isXfound = true;
       }
-      if (node.left?.val === y || node.right?.val === y) {
+      if (node!.left?.val === y || node!.right?.val === y) {
         yParent = node;
         yLevel = currentLevel;
         isYfound = true;
@@ -41,8 +41,8 @@ export default function areCousins(
         break;
       }
 
-      node.left && q.unshift(node.left);
-      node.right && q.unshift(node.right);
+      node!.left && q.unshift(node!.left);
+      node!.right && q.unshift(node!.right);
       width--;
     }
 
