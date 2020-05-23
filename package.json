@@ -4,7 +4,7 @@
   "description": "https://leetcode.com/explore/featured/card/may-leetcoding-challenge/534/",
   "dependencies": {},
   "devDependencies": {
-    "@types/chai": "^4.2.11",
+    "@types/chai": "4.2.11",
     "@types/expect": "24.3.0",
     "@types/mocha": "7.0.2",
     "@typescript-eslint/eslint-plugin": "2.34.0",
