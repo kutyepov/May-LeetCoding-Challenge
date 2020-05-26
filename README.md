@@ -45,3 +45,5 @@ My solutions to [May LeetCoding Challenge](https://leetcode.com/explore/featured
 [Day 23 - Interval List Intersections](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/interval-list-intersections/README.md)
 
 [Day 24 - Construct Binary Search Tree from Preorder Traversal](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/construct-binary-search-tree-from-preorder-traversal/README.md)
+
+[Day 26 - Contiguous Array](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/contiguous-array/README.md)
