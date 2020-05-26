@@ -43,3 +43,5 @@ My solutions to [May LeetCoding Challenge](https://leetcode.com/explore/featured
 [Day 22 - Sort Characters By Frequency](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/sort-characters-by-frequency/README.md)
 
 [Day 23 - Interval List Intersections](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/interval-list-intersections/README.md)
+
+[Day 24 - Construct Binary Search Tree from Preorder Traversal](https://github.com/kutyepov/LeetCode30DayCodingChallenge/blob/master/src/construct-binary-search-tree-from-preorder-traversal/README.md)
