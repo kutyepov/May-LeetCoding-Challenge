@@ -49,3 +49,5 @@ My solutions to [May LeetCoding Challenge](https://leetcode.com/explore/featured
 [Day 26 - Contiguous Array](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/contiguous-array/README.md)
 
 [Day 27 - Possible Bipartition](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/possible-bipartition/README.md)
+
+[Day 28- Counting Bits](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/counting-bits/README.md)
