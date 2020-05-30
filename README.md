@@ -51,3 +51,5 @@ My solutions to [May LeetCoding Challenge](https://leetcode.com/explore/featured
 [Day 27 - Possible Bipartition](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/possible-bipartition/README.md)
 
 [Day 28- Counting Bits](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/counting-bits/README.md)
+
+[Day 29- Course Schedule](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/course-schedule/README.md)
