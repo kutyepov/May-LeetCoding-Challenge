@@ -50,8 +50,10 @@ My solutions to [May LeetCoding Challenge](https://leetcode.com/explore/featured
 
 [Day 27 - Possible Bipartition](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/possible-bipartition/README.md)
 
-[Day 28- Counting Bits](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/counting-bits/README.md)
+[Day 28 - Counting Bits](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/counting-bits/README.md)
 
-[Day 29- Course Schedule](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/course-schedule/README.md)
+[Day 29 - Course Schedule](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/course-schedule/README.md)
 
-[Day 30- K Closest Points to Origin](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/k-closest-points-to-origin/README.md)
+[Day 30 - K Closest Points to Origin](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/k-closest-points-to-origin/README.md)
+
+[Day 31 - Edit Distance](https://github.com/kutyepov/May-LeetCoding-Challenge/blob/master/src/edit-distance/README.md)
